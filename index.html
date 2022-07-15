@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacion HTML5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/extras/jquery.min.1.7.js"></script>
+    <type="text/javascript" src="/extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#html5">Etiquetas semánticas html5</a>
+              <a class="nav-link active" href="#Mediaqueries">Mediaqueries</a>
+              <a class="nav-link active" href="#Turn.js">Turn.js</a>
+              <a class="nav-link active" href="#Animate.style">Animate.style</a>
+              <a class="nav-link active" href="#Wow.js">Wow.js</a>
+
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/html.jpg" class="d-block w-100" width="1px" height="550px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/html2.png" class="d-block w-100" width="1px" height="550px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/html 3.jpg" class="d-block w-100" width="1px" height="550px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Etiquetas semánticas html5</h1>
+        </div>
+        <div class="caja1">
+            <div id="html5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-center">Etiquetas semánticas</h2>
+                        <p>
+                            HTML Semántico es el uso de las etiquetas HTML para reforzar la semántica, o el significado, de la información en las páginas web más que simplemente redefinir su forma de presentación (apariencia), estas pueden ser: header,hgroup,nav, article, section, aside, footer , 
+                                </p>
+                        <h3>Ejemplo</h3>    
+                        <div id="header">
+                            <h1>Nombre de la empresa</h1>
+                            <p>Eslogan de la empresa</p>
+                        </div>
+                        <div id="content">
+                            <h2>Noticia 1</h2>
+                            <p>Desarrollo de la noticia 1</p>
+                        
+                            <h2>Noticia 2</h2>
+                            <p>Desarrollo de la noticia 2</p>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-md-6 img">
+                        <img src="images/estructura.jpg" alt="Estructura de la web" title="Estructura de la web" height="500" width="620">
+                    </div>
+        </div>
+        </div>  
+        <div class="caja2">
+            <div id="Mediaqueries">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 img">
+                        <img src="images/mediaqueries.png" alt="Estructura de la web" title="Estructura de la web" height="400" width="668">
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <h2 class="text-center">Mediaqueries</h2>
+                        <p>Las media queries (en español "consultas de medios") son útiles cuando deseas modificar tu página web o aplicación en función del tipo de dispositivo (como una impresora o una pantalla) o de características y parámetros específicos (como la resolución de la pantalla o el ancho del viewport del navegador).</p>
+            
+                        <p>Se utilizan para:
+            
+                            Aplicar estilos condicionales con las reglas-at @media e @import de CSS.
+                            Indicar medios específicos en los elementos link, source y otros elementos HTML.
+               
+                            Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() y MediaQueryList.addListener().</p>
+
+                            <p>El resultado de la consulta es "verdadero" cuando el tipo de medio (si se especifica) coincide con el dispositivo en el que se está mostrando el documento y todas las expresiones en el media query son "verdaderas". En este caso, se aplica los estilos correspondientes, siguiendo las reglas usuales de cascada.
+
+                            </p>
+                            
+                    </div>
+                </div>
+                
+        </div>
+        <div class="caja3">
+            <div id="Turn.js">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <h2 class="text-center">Turn.js</h2>
+                        <p>js es un plugin de JQuery que nos permite realizar el efecto Page-Flip (Tirón de páginas) totalmente con HTML5 y Javascript sin necesidad de algún elemento adicional, tal y como pasaba en Flash. Este famoso efecto está bastante pulido y en el caso del sitio web del mismo plugin, se puede ver que trabaja muy bien</p>
+                        <h3>Ejemplo</h3>
+                        
+                        <a href="turn.html">
+                          <button type="button" class="btn btn-outline-primary">Click here</button>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-6 img">
+                      <img src="images/turnjs.png" alt="Estructura de la web" title="Estructura de la web" height="400" width="668">
+                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caja4">
+          <div id="Animate.style">
+            <div class="row">
+              <div class="col-xs-6 col-md-6 img">
+                <img src="images/animate.jpg" alt="Estructura de la web" title="Estructura de la web" height="400" width="668">
+            </div>
+            <div class="col-xs-6 col-md-6">
+              <h2 class="text-center">Animate.style</h2>
+              <p>Animate.css es una librería de animaciones listas para usar, para todos los navegadores, para utilizar en sus proyectos web. Ideal para dar énfasis, páginas de inicio, deslizadores y sugerencias para guiar la atención.</p>
+              <h3>Ejemplo</h3>
+              <a href="animate.html">
+                <button type="button" class="btn btn-outline-primary">Click here</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="caja5">
+          <div id="Wow.js">
+            <div class="row">
+              <div class="col-xs-6 col-md-6">
+                <h2 class="text-center">Wow.js</h2>
+                <p>Animate.css es una librería de animaciones listas para usar, para todos los navegadores, para utilizar en sus proyectos web. Ideal para dar énfasis, páginas de inicio, deslizadores y sugerencias para guiar la atención.</p>
+                <h3>Ejemplo</h3>
+                <a href="wow.html">
+                  <button type="button" class="btn btn-outline-primary">Click here</button>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-6 img">
+              <img src="images/wowjs.jpg" alt="Estructura de la web" title="Estructura de la web" height="400" width="640">
+          </div>
+        </div>
+        </div>
+            
+
+    
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

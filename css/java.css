@@ -1,0 +1,16 @@
+/* Basic sample */
+
+body{
+	overflow:hidden;
+	background-color:#fcfcfc;
+	margin:0;
+	padding:0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+#album{
+	margin: 5% auto;
+	width: 600px;
+	height: 500px;
+}
